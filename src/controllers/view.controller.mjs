@@ -1,4 +1,4 @@
-import { createUser } from '../model/user.model.mjs'
+import { createUser } from '../models/user.model.mjs'
 
 const permissions = [
   'Rango 5',

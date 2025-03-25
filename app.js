@@ -1,12 +1,12 @@
 /* eslint-disable import/first */
+
 import express from 'express'
 import path from 'path'
-import env from './src/config/env.config.mjs'
+import env from './src/configs/env.config.mjs'
 
 const app = express()
 
 import methodOverride from 'method-override'
-
 app.use(methodOverride('_method'))
 
 // Configuracion de __dirname
