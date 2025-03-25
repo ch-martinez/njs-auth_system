@@ -1,12 +1,11 @@
-import { Router } from "express";
+import { Router } from 'express'
+
+import { authLogin } from '../controller/auth.mjs'
+import { forgotPasswordScreen } from '../controllers/view.controller.mjs'
 const router = Router()
 
-import { loginScreen, forgorPasswordScreen, registerScreen, panelScreen } from "../controller/renders.mjs";
-import { authLogin } from "../controller/auth.mjs";
-
-
 router.get('/', loginScreen)
-router.get('/forgot-password', forgorPasswordScreen)
+router.get('/forgot-password', forgotPasswordScreen)
 router.get('/register', registerScreen)
 router.get('/panel', panelScreen)
 

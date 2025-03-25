@@ -28,7 +28,7 @@ app.set('views', path.resolve(__dirname, 'src/views'))
 import expressEjsLayouts from 'express-ejs-layouts'
 app.use(expressEjsLayouts)
 
-import router from './src/routes/main.route.mjs'
+import router from './src/routes/routes.mjs'
 
 app.use('/', router)
 
