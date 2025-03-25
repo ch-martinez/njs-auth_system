@@ -1,3 +1,4 @@
+/* eslint-disable import/first */
 import express from 'express'
 import path from 'path'
 import env from './src/config/env.config.mjs'
