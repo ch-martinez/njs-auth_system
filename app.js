@@ -35,5 +35,5 @@ app.use('/', router)
 
 // Servidor
 app.listen(env.PORT, () => {
-    console.log(`>>> Server: http://localhost:${env.PORT}`)
+  console.log(`>>> Server: http://localhost:${env.PORT}`)
 })
