@@ -1,0 +1,38 @@
+<main class="main">
+    <section class="wrapper">
+        <div class="wrapper__header">
+            <h1 class="wrapper__title">LogPanel</h1>
+            <p class="wrapper__description">Panel de administracion</p>
+        </div>
+        <div class="wrapper__body">
+            <div class="row row--input">
+                <p>Datos del usuario</p>
+                <ul class="wrapper__body ul">
+
+                    <li class="li"><strong>Nombre:</strong>
+                        <%= user.user %>
+                    </li>
+                    <li class="li"><strong>Correo:</strong>
+                        <%= user.email %>
+                    </li>
+                    <li class="li"><strong>ROL:</strong>
+                        <%= user.role %>
+                    </li>
+                </ul>
+            </div>
+            <div class="row row--input">
+                <p>Permisos</p>
+                <ul class="wrapper__body ul">
+                    <% user.permissions.forEach( (p)=> {%>
+                        <li class="li"><strong></strong><%= p %></li>
+
+                    <%})%>
+                </ul>
+            </div>
+            <div class="row">
+                <a class="button button--secondary" href="/">Cerrar sesion</a>
+
+            </div>
+        </div>
+    </section>
+</main>
