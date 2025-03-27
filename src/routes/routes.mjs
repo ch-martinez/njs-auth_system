@@ -1,9 +1,11 @@
 import { Router } from 'express'
-import { loginScreen } from '../controllers/view.controller.mjs'
 
+import { createUser, loginUser } from '../controllers/user.controller.mjs'
 
 const router = Router()
 
-router.get('/', loginScreen)
+
+router.post('/create', createUser)
+router.post('/login', loginUser)
 
 export default router
